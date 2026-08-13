@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td class="topo-azul-claro">Não é associado? Faça seu cadastro</td>
+                <td class="topo-azul-escuro"></td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nome Completo</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>CPF</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>WebSite</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Endereço</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Bairro</td>
+                <td>
+                    <input type="text">
+                    Cidade <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Cep</td>
+                <td>
+                    <input type="text">
+                    UF 
+                    <select>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option selected>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Telefone</td>
+                <td>
+                    <input type="text">
+                    Fax <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Data Nascimento</td>
+                <td>
+                    <input type="text">
+                    Sexo 
+                    <input type="radio" name="sexo"> M 
+                    <input type="radio" name="sexo"> F
+                </td>
+            </tr>
+            <tr>
+                <td>Celular</td>
+                <td>
+                    <input type="text">
+                    Est.Civil 
+                    <select>
+                        <option>Solteiro</option>
+                        <option>Casado</option>
+                        <option>Viúvo</option>
+                        <option>Divorciado</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Login</td>
+                <td>
+                    <input type="text">
+                    Senha <input type="password">
+                </td>
+            </tr>
+        </table>
+
+        <p>Deseja receber informações sobre os seguintes assuntos abaixo:</p>
+
+        <div>
+            <label><input type="checkbox"> Tecnologia</label>
+            <label><input type="checkbox"> Esportes</label>
+            <label><input type="checkbox"> Automóveis</label>
+            <label><input type="checkbox"> Culinária</label>
+            <label><input type="checkbox"> Política</label>
+            <label><input type="checkbox"> Policial</label>
+            <label><input type="checkbox"> Tempo</label>
+        </div>
+
+        <div>
+            <label><input type="checkbox"> Cultura</label>
+            <label><input type="checkbox"> Economia</label>
+            <label><input type="checkbox"> Jogos</label>
+            <label><input type="checkbox"> Educação</label>
+            <label><input type="checkbox"> Viagem</label>
+            <label><input type="checkbox"> Empregos</label>
+            <label><input type="checkbox"> Moda e Estilo</label>
+        </div>
+
+        <p><label><input type="checkbox"> Li as regras de cadastro e autorizo a criação do usuário</label></p>
+
+        <button type="submit">Confirmar</button>
+        <button type="reset">Retornar</button>
+    </form>
+
+</body>
+</html>

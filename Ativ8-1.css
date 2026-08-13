@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
+
+td {
+    padding: 4px;
+}
+
+.topo-azul-claro {
+    background-color: lightskyblue;
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+}
+
+.topo-azul-escuro {
+    background-color: darkblue;
+    width: 30%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+button {
+    padding: 4px 10px;
+    margin-right: 5px;
+}
