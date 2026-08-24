@@ -1,0 +1,61 @@
+/* Regra 1: Link em estado inicial sem sublinhado */
+.link1:link,
+.link1:visited {
+  text-decoration: none;
+}
+
+/* Regra 2: Inicial overline, active line-through, visited underline */
+.link2:link {
+  text-decoration: overline;
+}
+.link2:visited {
+  text-decoration: underline;
+}
+.link2:active {
+  text-decoration: line-through;
+}
+
+/* Regra 3: Inicial laranja, hover verde e sublinhado */
+.link3:link,
+.link3:visited {
+  color: orange;
+  text-decoration: none;
+}
+.link3:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Regra 4: Inicial borda sólida azul/fundo preto/texto branco; Hover borda pontilhada preta/fundo branco/texto preto */
+.link4:link,
+.link4:visited {
+  border: 2px solid blue;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  display: inline-block;
+}
+.link4:hover {
+  border: 2px dotted black;
+  background-color: white;
+  color: black;
+}
+
+/* Regra 5: Inicial vermelho; Visited itálico/negrito laranja; Hover sublinhado; Active amarelo */
+.link5:link {
+  color: red;
+  text-decoration: none;
+}
+.link5:visited {
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+.link5:hover {
+  text-decoration: underline;
+}
+.link5:active {
+  color: yellow;
+}

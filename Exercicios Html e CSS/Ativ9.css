@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin: 20px;
+}
+
+.form-container {
+  max-width: 650px;
+}
+
+/* Estrutura da Tabela */
+.tabela-form {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-form td {
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+
+/* Colunas de rótulo */
+.tabela-form td:nth-child(1),
+.tabela-form td:nth-child(3) {
+  white-space: nowrap;
+  width: 1%;
+}
+
+/* Faixa Superior Azul */
+.linha-cabecalho td {
+  height: 24px;
+  padding: 6px 10px;
+}
+
+.header-azul-claro {
+  background-color: #80c8f8;
+  font-weight: bold;
+  color: #000;
+}
+
+.header-azul-escuro {
+  background-color: #000080;
+  width: 25%;
+}
+
+/* Campos de Entrada */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+
+select {
+  padding: 2px 4px;
+  border: 1px solid #aaa;
+}
+
+/* Checkboxes e Textos Inferiores */
+.secao-interesses {
+  margin-top: 15px;
+}
+
+.titulo-assuntos {
+  margin: 10px 0 8px 0;
+}
+
+.linha-checks {
+  margin-bottom: 6px;
+}
+
+.linha-checks label,
+.linha-termo label {
+  margin-right: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.linha-termo {
+  margin-top: 12px;
+}
+
+/* Botões */
+.botoes-acoes {
+  margin-top: 15px;
+}
+
+.botoes-acoes button {
+  padding: 3px 12px;
+  margin-right: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}

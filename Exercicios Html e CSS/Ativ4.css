@@ -1,0 +1,25 @@
+p {
+  border-left: 20px solid green;       /* ajuste: 20px ou ~2em */
+  border-right: 20px solid red;        /* ajuste: 20px ou ~2em */
+  width: 60%;
+  height: 400px;
+  font-size: 12px;
+  letter-spacing: normal;              /* ou letter-spacing: 1px / 0.1em */
+  word-spacing: 4ex;
+  line-height: 3em;
+  text-align: justify;
+  font-family: Verdana, sans-serif;
+  text-indent: 25px;
+  box-sizing: border-box;              /* garante que as bordas fiquem dentro dos 60% */
+}
+
+p::first-letter {
+  font-size: 36px;
+  color: blue;
+  text-decoration: overline;
+}
+
+p::first-line {
+  text-decoration: underline;
+  text-transform: uppercase;
+}

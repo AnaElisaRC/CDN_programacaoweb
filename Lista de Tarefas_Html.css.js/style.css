@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.input-grupo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 10px 18px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+li:hover {
+  background-color: #fafafa;
+}
+
+/* Estilo para tarefa concluída */
+.concluida {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+/* Botão excluir dentro de cada item */
+.btn-excluir {
+  background-color: #e74c3c;
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+}

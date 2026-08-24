@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define o padrão de caracteres para aceitar acentos em português -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Média</title>
+  
+  <!-- Liga este arquivo HTML com a folha de estilo CSS externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Caixa principal (card) que agrupa todo o formulário -->
+  <main class="card">
+    <h2>Calculadora de Média</h2>
+
+    <!-- Campo para digitar o nome -->
+    <div class="campo">
+      <label for="nome">Nome do Aluno:</label>
+      <input type="text" id="nome" placeholder="Ex: Maria">
+    </div>
+
+    <!-- Campos para digitar as notas -->
+    <div class="campo">
+      <label for="nota1">Nota 1:</label>
+      <input type="number" id="nota1" min="0" max="10" step="0.1" placeholder="0 a 10">
+    </div>
+
+    <div class="campo">
+      <label for="nota2">Nota 2:</label>
+      <input type="number" id="nota2" min="0" max="10" step="0.1" placeholder="0 a 10">
+    </div>
+
+    <div class="campo">
+      <label for="nota3">Nota 3:</label>
+      <input type="number" id="nota3" min="0" max="10" step="0.1" placeholder="0 a 10">
+    </div>
+
+    <!-- Botão que vai disparar a função no JavaScript -->
+    <button id="calcular">Calcular Média</button>
+
+    <!-- Área vazia onde o resultado final será exibido via JavaScript -->
+    <p id="resultado"></p>
+  </main>
+
+  <!-- Liga o arquivo JavaScript. Fica no final para o HTML carregar antes -->
+  <script src="script.js"></script>
+</body>
+</html>

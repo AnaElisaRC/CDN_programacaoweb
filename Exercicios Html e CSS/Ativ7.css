@@ -1,0 +1,36 @@
+.lista-ingredientes {
+  list-style-type: none;       /* remove a bolinha padrão do navegador */
+  padding: 0;
+  margin: 20px auto;
+  max-width: 320px;            /* ajusta para a largura de um card */
+}
+
+/* Estado Normal: texto vermelho, fonte Verdana 12px, borda tracejada 1px vermelha */
+.lista-ingredientes li {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color: red;
+  border-bottom: 1px dashed red;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Marcador: Seta vermelha */
+.lista-ingredientes li::before {
+  content: "\2794";            /* caractere da seta ➔ */
+  color: red;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+/* Estado Hover: texto, borda e seta na cor verde */
+.lista-ingredientes li:hover {
+  color: green;
+  border-bottom-color: green;
+}
+
+.lista-ingredientes li:hover::before {
+  color: green;
+}

@@ -1,0 +1,81 @@
+/* Zera margens padrões do navegador para facilitar o alinhamento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configura o fundo da página e centraliza o card no meio da tela */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e293b; /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilo do card branco central */
+.card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* Espaçamento entre cada rótulo e caixa de texto */
+.campo {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #334155;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Estilo do botão de ação */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Estilo do texto de resultado */
+#resultado {
+  margin-top: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0f172a;
+}
