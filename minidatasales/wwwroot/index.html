@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini DataSales</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="container">
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="logo">
+        <span class="icone-logo">📊</span>
+        <h1>Mini DataSales</h1>
+      </div>
+      <p>Dashboard de Vendas</p>
+    </header>
+
+    <!-- Indicadores -->
+    <section class="indicadores">
+      <div class="card card-indicador">
+        <div class="icone-circulo icone-receita">💲</div>
+        <div class="info-indicador">
+          <p>Receita Total</p>
+          <h2 id="receita-total">R$ 25.450,00</h2>
+          <span class="variacao positivo">vs mês anterior ↑ 12,5%</span>
+        </div>
+      </div>
+
+      <div class="card card-indicador">
+        <div class="icone-circulo icone-vendas">🛒</div>
+        <div class="info-indicador">
+          <p>Total de Vendas</p>
+          <h2 id="total-vendas">128</h2>
+          <span class="variacao positivo">vs mês anterior ↑ 8,2%</span>
+        </div>
+      </div>
+
+      <div class="card card-indicador">
+        <div class="icone-circulo icone-ticket">📈</div>
+        <div class="info-indicador">
+          <p>Ticket Médio</p>
+          <h2 id="ticket-medio">R$ 198,83</h2>
+          <span class="variacao negativo">vs mês anterior ↓ 3,1%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros card">
+      <h3>Filtro</h3>
+      <div class="filtro-linha">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+          <option value="todas">Todas as Categorias</option>
+          <option value="Informática">Informática</option>
+          <option value="Móveis">Móveis</option>
+          <option value="Eletrônicos">Eletrônicos</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <button id="filtrar">🔍 Filtrar</button>
+      </div>
+    </section>
+
+    <!-- Gráfico -->
+    <section class="grafico card">
+      <h3>Vendas por Categoria</h3>
+      <div class="area-grafico-completa">
+        <div class="grafico-container">
+          <div class="eixo-y">
+            <span>10k</span>
+            <span>8k</span>
+            <span>6k</span>
+            <span>4k</span>
+            <span>2k</span>
+            <span>0</span>
+          </div>
+
+          <div class="linhas-grade">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+          </div>
+
+          <div class="barras-container">
+            <div class="coluna">
+              <span class="valor-topo">9.850</span>
+              <div class="barra barra-azul" style="height: 98%;"></div>
+              <span class="legenda-eixo">Informática</span>
+            </div>
+            <div class="coluna">
+              <span class="valor-topo">6.300</span>
+              <div class="barra barra-verde" style="height: 63%;"></div>
+              <span class="legenda-eixo">Móveis</span>
+            </div>
+            <div class="coluna">
+              <span class="valor-topo">5.200</span>
+              <div class="barra barra-amarela" style="height: 52%;"></div>
+              <span class="legenda-eixo">Eletrônicos</span>
+            </div>
+            <div class="coluna">
+              <span class="valor-topo">4.100</span>
+              <div class="barra barra-roxa" style="height: 41%;"></div>
+              <span class="legenda-eixo">Outros</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="legenda-lateral">
+          <div class="legenda-item"><span class="ponto ponto-azul"></span> Informática</div>
+          <div class="legenda-item"><span class="ponto ponto-verde"></span> Móveis</div>
+          <div class="legenda-item"><span class="ponto ponto-amarelo"></span> Eletrônicos</div>
+          <div class="legenda-item"><span class="ponto ponto-roxo"></span> Outros</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela -->
+    <section class="tabela-secao card">
+      <h3>Últimas Vendas</h3>
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Produto</th>
+              <th>Categoria</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-vendas">
+            <tr>
+              <td>25/05/2024</td>
+              <td>Notebook Dell Inspiron</td>
+              <td>Informática</td>
+              <td>R$ 3.500,00</td>
+            </tr>
+            <tr>
+              <td>25/05/2024</td>
+              <td>Mouse Sem Fio Logitech</td>
+              <td>Informática</td>
+              <td>R$ 120,00</td>
+            </tr>
+            <tr>
+              <td>24/05/2024</td>
+              <td>Cadeira Office</td>
+              <td>Móveis</td>
+              <td>R$ 800,00</td>
+            </tr>
+            <tr>
+              <td>24/05/2024</td>
+              <td>Teclado Mecânico Redragon</td>
+              <td>Informática</td>
+              <td>R$ 230,00</td>
+            </tr>
+            <tr>
+              <td>23/05/2024</td>
+              <td>Mesa de Escritório</td>
+              <td>Móveis</td>
+              <td>R$ 950,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <p>Mini DataSales © 2024</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
